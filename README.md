@@ -1,42 +1,57 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+  <img src="./docs/assets/banner.gif" />
+</div>
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+<br/>
 
-## Setup
+<div align="center">
+  <a href="https://nuxtjs.org/docs/get-started/installation/">
+    <img alt="Nuxt" src="https://img.shields.io/badge/nuxt.js-00C58E?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+  </a>
+</div>
+<div align="center">
+  <a href="https://www.docker.com/">
+    <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white">
+  </a>
+</div>
 
-Make sure to install the dependencies:
+<br />
 
-```bash
-# yarn
-yarn install
+# 💻 Weather APP (NUXT3)
 
-# npm
-npm install
+Get the current weather for city.
+This is a little nuxt3 application with Tailwind and HTTP API Request.
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+## 🚀 Setup
 
-## Development Server
+### Configuration with docker (Recomendado)
 
-Start the development server on http://localhost:3000
+- [Install Docker](https://docs.docker.com/get-docker/)
+- [Install docker-compose](https://docs.docker.com/compose/install/)
+- Open the root folder and enter:
+  > ```sh
+  > docker-compose up
+  > ```
+- Application: http://localhost:3002
 
-```bash
-npm run dev
-```
+### Configuration without docker
 
-## Production
+Requirements:
 
-Build the application for production:
+- NodeJS@14.17.0
 
-```bash
-npm run build
-```
+Run
 
-Locally preview production build:
+- Install dependencies:
 
-```bash
-npm run preview
-```
+  > ```sh
+  > npm install
+  > ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+- Run app:
+  > ```sh
+  > npm run dev
+  > ```
