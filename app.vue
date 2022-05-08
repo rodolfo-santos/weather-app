@@ -1,30 +1,28 @@
 <template>
-  <div>
-    <figure
-      class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800"
-    >
-      <img
-        class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-        src="https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg"
-        alt=""
-        width="384"
-        height="512"
-      />
-      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-        <blockquote>
-          <p class="text-lg font-medium">
-            “Tailwind CSS is the only framework that I've seen scale on large
-            teams. It’s easy to customize, adapts to any design, and the build
-            size is tiny.”
-          </p>
-        </blockquote>
-        <figcaption class="font-medium">
-          <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
-          <div class="text-slate-700 dark:text-slate-500">
-            Staff Engineer, Algolia
-          </div>
-        </figcaption>
+  <div class="h-screen relative overflow-hidden">
+    <img src="" alt="" />
+    <div class="absolute w-full h-full top-0 overlay" />
+    <div class="absolute w-full h-full top-0 p-48">
+      <div class="flex justify-between">
+        <div>
+          <h1 class="text-7xl text-white">Toronto</h1>
+          <p class="font-extralight text-2xl mt-2 text-white">Sunday Dec 9th</p>
+          <img class="w-56 icon" src="" alt="" />
+        </div>
+        <div>
+          <p class="text-9xl text-white font-extralight">53ª</p>
+        </div>
       </div>
-    </figure>
+      <div class="mt-20">
+        <input type="text" class="w-1/2 h-10" placeholder="Search a city..." />
+        <button class="bg-sky-400 w-20 text-white h-10">Search</button>
+      </div>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+</style>
